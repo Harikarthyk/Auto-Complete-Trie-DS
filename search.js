@@ -1,4 +1,5 @@
 class Node{
+	//Alphabet Size = 26 .
 	constructor(){
 		this.isEnd = false ;
 		this.child = [] ;
@@ -26,30 +27,18 @@ class Trie{
 
 		curr.isEnd = true ;
 	}
-
-	// searchWord( str ){
-	// 	let curr = this.root ;
-	// 	for( var i =0 ; i<str.length;i++ ) {
-	// 		var index = str.charCodeAt(i) - 97 ;
-	// 		if( curr.child[index]==null ) return false ;
-	// 		curr = curr.child[index] ;
-	// 	}
-	// 	return curr.isEnd ;
-	// }
-	
+	//this helper() is used to generate all possible postfix for given prefix String :
 	helper( curr , postfix , prefix ) {
-		if( curr.isEnd==true ) {
+		if( curr.isEnd==true ) 
 			this.list.push(prefix+postfix) ;
-		}
-		for( var i=0;i<26;i++ ) {
+		for( var i=0;i<26;i++ ) 
 			if( curr.child[i]!=null ) {
 				postfix += 'abcdefghijklmnopqrstuvwxyz'.charAt(i);
 				this.helper( curr.child[i] , postfix , prefix ) ;
 				postfix = postfix.substring( 0 , postfix.length-1 ) ;
 			}
-		}
 	}
-
+	
 	findPostFix( prefix ) {
 		this.list = [] ;
 		let curr = this.root ;
@@ -62,10 +51,11 @@ class Trie{
 		return curr ;
 	}
 }
-
+//Head is Created her to make its scope Global .
 const head = new Trie() ;
 
 function insertTrie( input ){
+	//Inserting character from an txt file .
 	for( var i = 0 ; i<370104 ; i++ ) 
 		head.add(input[i]) ;
 }
@@ -84,11 +74,11 @@ $(document).ready(function(){
 	
 	$('.input').on('keyup',function( event ){
 		var input = $(this).val() ;
-		// console.log(searchEngine(input)) ;
-		// if((event.keyCode == 8) )
-			// $('.display-result').text('') ;	
+		//When something is typed in input box ( i.e Only Alphabtes , without spaces are accepted ) .
 		if( input.length>0){
+			//I have only inserted words in lowerCase character so as soon you type every input is made to LowerCase character
 			input = input.toLowerCase();
+			//The input is passed and it return array of words which matches the input
 			var arr = searchEngine(input) ;
 			var words ="" ;
 			for( var i=0;i<arr.length;i++ ) {
