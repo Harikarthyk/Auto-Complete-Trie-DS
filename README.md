@@ -1,7 +1,7 @@
 # Search-Engine--Trie-DS-
 Simple Search Engine using JS(Trie DS)
 
---
+
   -> Trie DS is implemented in JS and using on key input the value in the inuput box in evaluated .
   
   
