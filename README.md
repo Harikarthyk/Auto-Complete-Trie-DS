@@ -9,5 +9,5 @@ Simple Search Engine using JS(Trie DS)
 
   
   
-          ![search-engine](https://user-images.githubusercontent.com/54505967/84342575-849bd900-abc3-11ea-9947-561abd797d95.gif)
+![search-engine](https://user-images.githubusercontent.com/54505967/84342575-849bd900-abc3-11ea-9947-561abd797d95.gif)
   
