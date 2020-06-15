@@ -1,13 +1,15 @@
 # Search-Engine-(Trie-DS)
-Simple Search Engine using JS(Trie DS)
+Simple Search Engine using Trie DS (JS)
+-
 
+  -> Trie DS is implemented in JS .
+  
+  -> Intially I have add a txt file consisting of 37k english words in trie .
 
-  -> Trie DS is implemented in JS and using on key input the value in the inuput box in evaluated .
+  -> when you start typing something then it shows all the words that matches to it .
   
-  
-  -> Intially I have used a txt file consisting of 37k english words which is add to trie .
-
-  
+  Demo
+  -
   
 ![search-engine](https://user-images.githubusercontent.com/54505967/84342575-849bd900-abc3-11ea-9947-561abd797d95.gif)
   
