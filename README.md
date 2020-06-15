@@ -1,5 +1,4 @@
 # Search-Engine-(Trie-DS)
-Simple Search Engine using Trie DS (JS)
 -
 
   -> Trie DS is implemented in JS .
