@@ -1,4 +1,4 @@
-# Search-Engine-(Trie-DS)
+# Search-Engine(Dictionary Words)-(Trie-DS)
 -
 
   -> Trie DS is implemented in JS .
