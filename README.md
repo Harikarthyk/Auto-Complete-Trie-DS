@@ -1,7 +1,6 @@
-# Search-Engine(Dictionary Words)-(Trie-DS)
+# Auto-Complete-Trie-DS(Dictionary Words)
 -
 
-  -> Trie DS is implemented in JS .
   
   -> Intially I have add a txt file consisting of 37k english words in trie .
 
